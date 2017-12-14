@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tasks </title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div>
+		<h1>Bienvenido a TASKS v0.01</h1>
+		<h4>Apuennta - Recuerda - Haz</h4>
+		<a href="tasks"> Tasks</a>	
+	</div>
+	
+	<center>
+	<form action="/create/" method="Post">
+		Task Title: <input type="text" name="title"><br>
+		Task: <input type="text" name="tasks"><br>
+
+		<input type="submit" name="Post">
+	</form>	
+	</center>
+</body>
+</html>
